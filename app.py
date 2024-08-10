@@ -16,13 +16,13 @@ from dotenv import load_dotenv
 load_dotenv()
 
 #Langsmith Tracking
-os.environ['LANGCHAIN_API_KEY']=os.getenv('LANGCHAIN_API_KEY')
+os.environ['LANGCHAIN_API_KEY']=st.secrets["LANGCHAIN_API_KEY"]
 os.environ['LANGCHAIN_TRACING_V2']="true"
 os.environ['LANGCHAIN_PROJECT']="ML Tutor"
 
 #load the GROQ API KEY
-groq_api_key=os.getenv('GROQ_API_KEY')
-openai_api_key = st.secrets["OPENAI_API_KEY]
+groq_api_key=st.secrets["GROQ_API_KEY"]
+openai_api_key = st.secrets["OPENAI_API_KEY"]
 
 loader = PyPDFDirectoryLoader('Data') #Data Ingestion
 docs = loader.load()
