@@ -1,0 +1,14 @@
+langchain-openai
+langchain
+python-dotenv
+langchain_community
+langchain_core
+streamlit
+langchain_groq
+ipykernel
+chromadb
+langchain_huggingface
+pypdf
+faiss-cpu
+huggingface_hub
+cassio

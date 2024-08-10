@@ -1,0 +1,13 @@
+prefix=C:/Users/Moham/ML Tutor/nenv/Library
+exec_prefix=C:/Users/Moham/ML Tutor/nenv/Library
+libdir=C:/Users/Moham/ML Tutor/nenv/Library/lib
+sharedlibdir=C:/Users/Moham/ML Tutor/nenv/Library/lib
+includedir=C:/Users/Moham/ML Tutor/nenv/Library/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
