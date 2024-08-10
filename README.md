@@ -38,4 +38,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 If you have any questions, feel free to reach out:
 
 - **Email**: almhdmaideen@gmail.com
-- **LinkedIn**: [Your GitHub Profile](https://www.linkedin.com/in/mohamed-maideen-m-70a00b186/)
+- **LinkedIn**: [LinkedIN](https://www.linkedin.com/in/mohamed-maideen-m-70a00b186/)
