@@ -22,7 +22,7 @@ os.environ['LANGCHAIN_PROJECT']="ML Tutor"
 
 #load the GROQ API KEY
 groq_api_key=os.getenv('GROQ_API_KEY')
-openai_api_key = os.getenv('OPENAI_API_KEY')
+openai_api_key = st.secrets["OPENAI_API_KEY]
 
 loader = PyPDFDirectoryLoader('Data') #Data Ingestion
 docs = loader.load()
