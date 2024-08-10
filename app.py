@@ -42,14 +42,17 @@ prompt=ChatPromptTemplate.from_template(
     Question:{input}
     """
 )
-vectorstore = FAISS.from_documents(final_documents,embeddings)
-vectorstore.save_local("faiss_index")
-
+def vector_store(docs):
+    if "faiss_index" not in st.session_state:
+        vectorstore = FAISS.from_documents(final_documents,embeddings)
+        vectorstore.save_local("faiss_index")
+        
 st.title("ML TUTOR")
 
 user_prompt=st.text_input("Enter your question")
 
 if user_prompt:
+    vector_store(final_documents)
     faiss_vectors=FAISS.load_local("faiss_index",embeddings,allow_dangerous_deserialization=True)
     document_chain=create_stuff_documents_chain(llm,prompt)
     retriever=faiss_vectors.as_retriever()
